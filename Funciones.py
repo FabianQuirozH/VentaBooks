@@ -25,6 +25,7 @@ def limpiarpantalla():
 
 #guardar
 
+
 #buscar
 
 #certificadoscriticas
