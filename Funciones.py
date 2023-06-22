@@ -21,18 +21,30 @@ def limpiarpantalla():
     os.system('CLS')
 #######################################
 #funciones de arreglo
-#validarcodigo
 
 #guardar
+def guardar(codigo, titulo, autor, precio):
+
+    if None in libros:
+        for i in range(10):
+            if libros[i,0]==None:
+                libros[i,0]=codigo
+                libros[i,1]=titulo
+                libros[i,2]=autor
+                libros[i,3]=precio
+                printv("Libro guardado")
+                break
 
 
 #buscar
+def buscar(librob):
+    for i in range(10):
+        if librob in libros[i,0]:
+            printv(f"CD:{i,0}, titulo:{i,1},autor:{i,2}, precio{i,3}")
+        else:
+            printr("El libro no esta en nuestra tienda")
+    
 
 #certificadoscriticas
 
 #certificadodetalles
-
-#######################################
-#######################################
-#######################################
-#######################################

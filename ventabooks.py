@@ -17,9 +17,20 @@ while True:
         break    
     elif opcion==1:
         fu.printv("Guardar")
+        codigo=input("Ingrese codigo: ")
+        titulo=input("ingrese titulo (min. 4 caracteres): ") 
+        while len(titulo)<4:
+            titulo=input("Ingrese titulo")
+        autor=input("Ingrese nombre autor: ") 
+        precio=int(input("Ingrese precio: "))
+        while precio<=0:
+            precio=int(input("Ingrese Precio valido: "))
+        fu.guardar(codigo,titulo,autor,precio)
 
     elif opcion==2:
         fu.printv("Buscar")
+        librob=input("ingrese codigo del libro a buscar: ")
+        fu.buscar(librob)
 
     elif opcion==3:
         fu.printv("Certificados")
